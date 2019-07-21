@@ -9,17 +9,21 @@ const secondDogName = 'Luna';
 const thirdDogImage = 'https://images.dog.ceo/breeds/affenpinscher/n02110627_7065.jpg';
 const thirdDogName = 'Lana';
 
-document.querySelector('.list').innerHTML =  `
+
+const list = document.querySelector ('.list');
+
+list.innerHTML = `
+<p>Mis perros se llaman ${firstDogName}, ${secondDogName} y ${thirdDogName}</p>
+<p>Y estas son sus fotos:</p>
 <ul>
     <li>
-        <a href="${firstDogImage}"> ${firstDogName}</a>
+        <img src"${firstDogImage}" alt"${firstDogName}">
     </li>
     <li>
-        <a href="${secondDogImage}"> ${secondDogName}</a>
+        <img src"${secondDogImage}" alt"${secondDogName}">
     </li>
     <li>
-        <a href="${thirdDogImage}"> ${thirdDogName}</a>
-    </li>
+        <img src"${thirdDogImage}" alt"${thirdDogName}">
+    </li>  
 </ul>
-
 `;
