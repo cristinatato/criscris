@@ -1,8 +1,7 @@
 'use strict';
 
-function price (a) {
-    const sinIVA = a;
-    const iVA = a * (21/100);
+function price (sinIVA) {
+    const iVA = sinIVA * (21/100);
     const total = sinIVA + iVA;
     return (`El precio sin IVA: ${sinIVA}, IVA: ${iVA} y Total: ${total}`);
 }
