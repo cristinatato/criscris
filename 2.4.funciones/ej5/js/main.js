@@ -1,7 +1,9 @@
 'use strict';
 
-function getEl (element) {
-    document.querySelector (element)
+function getEl (elemento) {
+    document.querySelector(elemento).innerHTML;
+
 }
-const h1 = getEl('.title');
-console.log (h1);
+
+const elemento1 = getEl('.title');
+console.log(elemento1);
